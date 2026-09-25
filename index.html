@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            #a{
+                font-size:30px;
+                padding:20px 40px;
+                color:#1e293b;
+                background-color: #facc15;
+            }
+            body{
+                background-color: #0b132b;
+                
+                
+            }
+            .container{
+                display: flex;
+                justify-content: center; /* 水平居中 */
+                align-items: center; /* 垂直居中 */
+                height: 100vh; /* 容器高度占满屏幕 */
+            }
+            #input{
+                padding:20px 40px;
+                font-size:30px;
+                background-color: #fdfbf7
+            }
+        </style>
+        <script>
+            let bgm = new Audio('中秋.mp3');
+            function blessing(){
+                let name =  document.querySelector("#input").value
+                bgm.play()
+                alert(`${name},中秋快乐！！！`)
+                alert('月色满人间，清辉照归途。愿你心有明月，身有归处，中秋安康。')
+                alert('一轮圆月，万家灯火；人间至味，不过团圆。祝你中秋喜乐，岁岁常安。')
+                alert('愿月光所照，皆是故乡；脚步所至，皆有星光。中秋快乐。')
+                alert('今夜把祝福寄给月亮，愿它照亮你所有温柔与梦想。')
+                alert('月圆是诗，团圆是画，愿你的人生既有诗意，也有烟火。')
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <input id="input" placeholder="请输入你的名字">
+            <button id='a' onclick="blessing()">提交</button>
+        </div>
+
+    </body>
+</html>
